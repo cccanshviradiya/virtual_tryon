@@ -33,7 +33,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Railway provides the PORT variable
-ENV PORT=7860
+ENV PORT=8080
 
 # Run Streamlit app
 CMD streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --server.enableCORS=false --server.enableXsrfProtection=false
